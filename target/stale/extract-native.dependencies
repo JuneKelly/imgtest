@@ -1,0 +1,1 @@
+([:dependencies ([org.clojure/clojure "1.5.1"] [lib-noir/lib-noir "0.7.6"] [compojure/compojure "1.1.6"] [ring-server/ring-server "0.3.1"] [selmer/selmer "0.5.3"] [com.taoensso/timbre "2.7.1"] [com.postspectacular/rotor "0.1.0"] [com.taoensso/tower "2.0.0"] [markdown-clj/markdown-clj "0.9.35"] [environ/environ "0.4.0"])])

@@ -1,0 +1,23 @@
+{% extends "imgtest/views/templates/base.html" %}
+{% block content %}
+ <div class="row-fluid">
+    <div class="span8">
+      <h1>TEST : {{user.full_name}}</h1>
+      <p>
+        The above title was dynamically set by template variable. there should be an image between here...
+      </p>
+      <p>
+        <img src="{{user.gravatars.large}}"
+             class="img-responsive"></img>
+      </p>
+      <p>
+        ...and here
+      </p>
+      <p>
+      The image should be: {{user.gravatars.large}} .
+      Below we can see that an 'a' tag with href set to be the value of the gravatars.large url does not fail to render:
+      <a href="{{user.gravatars.large}}">CLICK HERE</a>
+      </p>
+    </div>
+ </div>
+{% endblock %}
